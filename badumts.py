@@ -72,7 +72,7 @@ def plt_to_excel(t, y):
 
     "Para guardar los datos en Excel"
 
-    data = {'Voltake': y[0, :],
+    data = {'Voltaje': y[0, :],
             'Temperatura': y[1, :]}
     df = pd.DataFrame(data, columns=['Voltaje', 'Temperatura'])
     df.to_excel('DataLogger.csv')
